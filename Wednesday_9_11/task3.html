@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="head"></div>
+    
+    <div class="head">
+        <p class="content"></p>
+    </div>
+
+    <div class="head"></div>
+
+    <script>
+        let hack = document.getElementsByClassName('head')[0];
+        hack.innerHTML = 'What is Lorem ipsum?';
+
+        hack.style.border = '1px black solid' ;
+        hack.style.backgroundColor = 'rgba(109, 109, 109, 0.183)' ;
+        hack.style.width = "400px";
+        hack.style.padding = '10px';
+        hack.style.textAlign = "start";
+        hack.style.fontSize = "30px";
+        hack.style.fontWeight = 'bolder';
+       
+        let bad = document.getElementsByClassName('head')[1];
+        bad.innerHTML = 'Why do we use it?';
+
+        bad.style.border = '1px black solid' ;
+        bad.style.backgroundColor = 'rgba(109, 109, 109, 0.183)' ;
+        bad.style.width = "400px";
+        bad.style.padding = '10px';
+        bad.style.textAlign = "start";
+        bad.style.fontSize = "25px";
+        bad.style.fontWeight = 'bolder';
+
+        let p = document.querySelectorAll('.content')[0];
+        p.innerHTML = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo vero maxime praesentium eaque, quidem explicabo deserunt placeat vitae architecto velit amet quasi dolore hic, ex optio repellat nam consequatur esse recusandae magnam quaerat accusamus quis odit! Optio perferendis, similique itaque vero corporis impedit quidem voluptates eaque maiores, sunt recusandae sapiente.';
+
+        p.style.border = '1px black solid' ;
+        p.style.backgroundColor = 'white' ;
+        p.style.width = "400px";
+        p.style.padding = '10px';
+        p.style.textAlign = "start";
+        p.style.fontSize = "25px";
+        p.style.fontWeight = 'bolder';
+    </script>
+</body>
+</html>
